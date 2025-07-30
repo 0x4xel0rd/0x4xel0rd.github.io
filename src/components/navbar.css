@@ -1,0 +1,58 @@
+.navbar {
+  color: #ffffff;
+  background: var(--nav-color);
+  height: 4rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 150;
+}
+
+.navbar-logo {
+  margin-left: 0.5rem;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 0.5rem;
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  z-index: 200;
+  background-color: var(--nav-color);
+}
+
+.dropdown li {
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown li:hover {
+  background-color: var(--highlight-color);
+  color: var(--bg-color);
+}
+
+.dropdown li a {
+  display: block;
+}
+
+.desktopOthers {
+  margin: 1rem;
+}
+
+.desktopOthers button {
+  margin: 0 0.5rem;
+}

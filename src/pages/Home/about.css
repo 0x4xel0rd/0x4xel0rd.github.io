@@ -1,0 +1,26 @@
+#section-about {
+  flex-direction: column;
+}
+
+#section-about h3 {
+  margin: 1rem;
+}
+
+#about-details {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+#about-img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-content {
+  width: 60%;
+  padding: 0 1rem;
+  line-height: 1.5rem;
+}

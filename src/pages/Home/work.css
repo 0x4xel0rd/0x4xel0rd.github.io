@@ -1,0 +1,7 @@
+#section-work {
+  flex-direction: column;
+}
+
+#section-work h3 {
+  margin: 1rem;
+}

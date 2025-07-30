@@ -1,0 +1,79 @@
+:root {
+  --bg-color: #ffffff;
+  --bg-color-2: #f9fafb;
+  --font-color: #383838;
+  --highlight-color: #608a74;
+  --nav-color: #acacac;
+  --footer-color: #acacac;
+
+  --dark-bg-color: #292c34;
+  --dark-bg-color-2: #22262d;
+  --dark-font-color: #ffffff;
+  --dark-highlight-color: #f6dba1;
+  --dark-nav-color: rgb(29 33 39 / 0.8);
+  --dark-footer-color: #1d2127;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, serif;
+  scroll-behavior: smooth;
+}
+
+.dark-theme {
+  --bg-color: var(--dark-bg-color);
+  --bg-color-2: var(--dark-bg-color-2);
+  --font-color: var(--dark-font-color);
+  --highlight-color: var(--dark-highlight-color);
+  --nav-color: var(--dark-nav-color);
+  --footer-color: var(--dark-footer-color);
+}
+
+body,
+a,
+div {
+  color: var(--font-color);
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+section:nth-of-type(odd) {
+  background-color: var(--bg-color);
+}
+
+section:nth-of-type(even) {
+  background-color: var(--bg-color-2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--highlight-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  color: var(--font-color);
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}

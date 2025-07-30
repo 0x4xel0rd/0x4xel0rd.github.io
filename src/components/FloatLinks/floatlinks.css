@@ -1,0 +1,26 @@
+#float-links {
+  position: fixed;
+  top: 70%;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+#float-links a:hover {
+  color: var(--highlight-color);
+  fill: var(--highlight-color);
+}
+
+#decorate-line {
+  background-color: var(--font-color);
+  height: 7rem;
+  width: 3px;
+  margin: 0.5rem 0;
+}

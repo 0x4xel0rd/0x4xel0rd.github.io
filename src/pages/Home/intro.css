@@ -1,0 +1,12 @@
+#section-intro {
+  color: #ffffff;
+  height: 50vh;
+  position: relative;
+  justify-content: center;
+}
+
+#intro-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

@@ -1,0 +1,7 @@
+#section-education {
+  flex-direction: column;
+}
+
+#section-education h3 {
+  margin: 1rem;
+}

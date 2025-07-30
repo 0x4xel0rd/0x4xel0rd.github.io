@@ -1,0 +1,9 @@
+.personal-links a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  margin: 0 0.5rem;
+}
+
+.personal-links a:hover {
+  transform: rotate(-15deg) scale(1.2);
+}
