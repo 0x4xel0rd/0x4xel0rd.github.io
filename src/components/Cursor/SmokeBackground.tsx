@@ -4,22 +4,25 @@ import { useFluid } from "@funtech-inc/use-shader-fx";
 import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
-function FluidSimulater() {
+function FluidSimulater({ inkColor }: { inkColor: string }) {
   const { size, viewport } = useThree();
 
   const { texture, render: updateFluid } = useFluid({
     size: {
       width: size.width,
       height: size.height,
+      top: 0,
+      left: 0,
     },
     dpr: 0.5,
-    curlStrength: 100,
-    densityDissipation: 0.99,
-    pressureDissipation: 0.9,
+    // curlStrength: 100,
+    // densityDissipation: 0.99,
+    // pressureDissipation: 0.9,
     pressureIterations: 20,
-    splatRadius: 0.2,
-    velocityAcceleration: 10,
-    velocityDissipation: 0.995,
+    // splatRadius: 0.2,
+    // velocityAcceleration: 10,
+    // velocityDissipation: 0.995,
+    // fluidColor: new THREE.Color(inkColor),
   });
 
   useFrame((state) => updateFluid(state));
@@ -52,6 +55,8 @@ function SmokeBackground() {
     setInkColor(ink);
   }, [theme]);
 
+  console.log(inkColor);
+
   return (
     <Canvas
       style={{
@@ -65,8 +70,8 @@ function SmokeBackground() {
       }}
       key={`${bgColor}-${inkColor}`}
     >
-      <color attach="background" args={[bgColor]} />
-      <FluidSimulater key={inkColor} />
+      <color attach="background" args={[new THREE.Color(bgColor)]} />
+      <FluidSimulater inkColor={inkColor} key={inkColor} />
     </Canvas>
   );
 }
