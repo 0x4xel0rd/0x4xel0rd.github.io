@@ -1,14 +1,10 @@
 import * as THREE from "three";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useFluid } from "@funtech-inc/use-shader-fx";
-import { useContext, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
-interface FluidSimulaterProps {
-  inkColor: string;
-}
-
-function FluidSimulater({ inkColor }: FluidSimulaterProps) {
+function FluidSimulater() {
   const { size, viewport } = useThree();
 
   const { texture, render: updateFluid } = useFluid({
@@ -43,20 +39,18 @@ function FluidSimulater({ inkColor }: FluidSimulaterProps) {
 }
 
 function SmokeBackground() {
-  const style = getComputedStyle(document.documentElement);
-  const bgColor = style.getPropertyValue("--bg-color").trim();
-  const inkColor = style.getPropertyValue("--font-color").trim();
+  const { theme } = useContext(ThemeContext);
+  const [bgColor, setBgColor] = useState("");
+  const [inkColor, setInkColor] = useState("");
 
-  const { theme, setTheme } = useContext(ThemeContext);
+  useEffect(() => {
+    const style = getComputedStyle(document.documentElement);
+    const bg = style.getPropertyValue("--bg-color").trim();
+    const ink = style.getPropertyValue("--font-color").trim();
 
-  console.log(
-    "theme = ",
-    theme,
-    "bgColor = ",
-    bgColor,
-    "inkColor = ",
-    inkColor
-  );
+    setBgColor(bg);
+    setInkColor(ink);
+  }, [theme]);
 
   return (
     <Canvas
@@ -72,7 +66,7 @@ function SmokeBackground() {
       key={`${bgColor}-${inkColor}`}
     >
       <color attach="background" args={[bgColor]} />
-      <FluidSimulater inkColor={inkColor} key={inkColor} />
+      <FluidSimulater key={inkColor} />
     </Canvas>
   );
 }

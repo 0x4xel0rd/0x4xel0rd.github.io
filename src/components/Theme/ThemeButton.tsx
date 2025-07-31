@@ -6,11 +6,13 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 import "./themebutton.css";
 
+type Theme = "light" | "dark";
+
 function ThemeButton() {
   const { theme, setTheme } = useContext(ThemeContext);
 
   useEffect(() => {
-    const saved = localStorage.getItem("theme") || "light";
+    const saved = (localStorage.getItem("theme") || "dark") as Theme;
     document.documentElement.classList.toggle("dark-theme", saved === "dark");
     setTheme(saved);
   }, []);
