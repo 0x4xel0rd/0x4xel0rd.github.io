@@ -11,7 +11,7 @@ function About() {
 
         <div id="about-content">
           <p>
-            My name is <b>Suvam Barui<b/>, and I thrive at the intersection of offensive security, automation, and real-world problem solving. I’ve always been drawn to understanding how systems work — and more importantly, how they break. That curiosity, paired with a relentless drive to learn and grow, has shaped me into the cybersecurity professional I am today. I specialize in penetration testing, SOC operations, and security automation, with a focus on identifying inefficiencies and engineering solutions that scale. Whether it's reducing incident response times with custom SOAR workflows or fine-tuning SIEM pipelines for speed and relevance, I aim to solve problems with precision and purpose.
+            My name is <b>Suvam Barui</b>, and I thrive at the intersection of offensive security, automation, and real-world problem solving. I’ve always been drawn to understanding how systems work — and more importantly, how they break. That curiosity, paired with a relentless drive to learn and grow, has shaped me into the cybersecurity professional I am today. I specialize in penetration testing, SOC operations, and security automation, with a focus on identifying inefficiencies and engineering solutions that scale. Whether it's reducing incident response times with custom SOAR workflows or fine-tuning SIEM pipelines for speed and relevance, I aim to solve problems with precision and purpose.
           </p>
           <br />
           <p>
@@ -37,7 +37,7 @@ function About() {
             Outside of the lab or SOC, I find fulfillment in teaching and mentoring. As a Graduate Teaching Assistant for the “Hacking for Defense” course at RIT, I guided student teams tackling real-world challenges for government agencies like the Department of State and Department of Defense. Watching those students grow - and having a hand in that growth — reinforced my belief in collaboration, clarity, and the impact of shared knowledge. It’s the same ethos I bring to every team I’m part of.
 
 This portfolio is a reflection of who I am: a builder, a breaker, and a relentless learner. Whether I’m reverse engineering malware, tuning detection rules, or mentoring future defenders, my goal is simple - to become so good that even on my worst days, I make a difference. Security isn’t just my career - it’s my craft.
-          <p/>
+          </p>
         </div>
       </div>
     </section>
