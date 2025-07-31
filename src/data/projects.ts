@@ -19,7 +19,7 @@ export const projects: ProjectData[] = [
     img: "123",
     github: "https://github.com/0x4xel0rd/PortRecon",
     live: "",
-    shortDesc: "",
+    shortDesc: "A simple Bash script to automate common Nmap scans against one or more targets.",
     desc: "",
     skills: ["", ""],
     medium: "",
