@@ -4,7 +4,7 @@ import { useFluid } from "@funtech-inc/use-shader-fx";
 import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
-function FluidSimulater({ inkColor }: { inkColor: string }) {
+function FluidSimulater() {
   const { size, viewport } = useThree();
 
   const { texture, render: updateFluid } = useFluid({
@@ -71,7 +71,7 @@ function SmokeBackground() {
       key={`${bgColor}-${inkColor}`}
     >
       <color attach="background" args={[new THREE.Color(bgColor)]} />
-      <FluidSimulater inkColor={inkColor} key={inkColor} />
+      <FluidSimulater key={inkColor} />
     </Canvas>
   );
 }
