@@ -31,7 +31,7 @@ export const works: Data[] = [
       "Simone Center for Innovation and Entrepreneurship, Rochester Institute of Technology",
     year: "Jan 2023 - Jul 2024",
     location: "Rochester, New York",
-    description: "Problem Solving, Leadership, People Management, Mentorship",
+    description: "Problem Solving, Leadership, People Management, Mentorship, Stakeholder Communication",
   },
   {
     id: "4",
