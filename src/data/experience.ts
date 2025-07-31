@@ -10,11 +10,11 @@ export interface Data {
 export const works: Data[] = [
   {
     id: "1",
-    title: "Security Engineer Intern (Multiple Domains)",
+    title: "Security Engineer Intern Generalist",
     company: "Securely Yours LLC",
     year: "May 2025 - Present",
     location: "Bloomfield Hills, Michigan",
-    description: "",
+    description: "Web Application Penetration Testing, Security Automation for Incident Response, Log Analysis",
   },
   {
     id: "2",
@@ -22,7 +22,7 @@ export const works: Data[] = [
     company: "Securely Managed LLC",
     year: "Feb 2025 - May 2025",
     location: "Bloomfield Hills, Michigan",
-    description: "Description",
+    description: "Security Alert Monitoring, Incident Response, Customer Service, Troubleshooting and Diagnosis",
   },
   {
     id: "3",
@@ -31,7 +31,7 @@ export const works: Data[] = [
       "Simone Center for Innovation and Entrepreneurship, Rochester Institute of Technology",
     year: "Jan 2023 - Jul 2024",
     location: "Rochester, New York",
-    description: "",
+    description: "Problem Solving, Leadership, People Management, Mentorship",
   },
   {
     id: "4",
@@ -39,7 +39,7 @@ export const works: Data[] = [
     company: "Freelance",
     year: "March 2021 - Jun 2022",
     location: "Remote",
-    description: "",
+    description: "Vulnerability Assessment and Penetration Testing",
   },
 ];
 
